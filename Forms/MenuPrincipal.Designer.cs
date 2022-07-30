@@ -479,6 +479,7 @@
             this.Controls.Add(this.shapeContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuPrincipal";
+            this.Resizable = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Style = MetroFramework.MetroColorStyle.Red;
             this.Text = "MenuPrincipal";
@@ -541,9 +542,5 @@
         private MetroFramework.Controls.MetroTile mtSobreNos;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
-
-
-
-
     }
 }

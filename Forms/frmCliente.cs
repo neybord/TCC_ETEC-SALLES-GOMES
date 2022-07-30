@@ -22,7 +22,8 @@ namespace Forms
             InitializeComponent();
         }
 
-        Conexao con = new Conexao();
+        public Form menuPrincipal { get; set; }
+        Conexao con = new Conexao();        
         string idCliente;
         bool selecionado = false;
         int tCont = 0;
@@ -181,8 +182,7 @@ namespace Forms
 
         private void frmCliente_FormClosed(object sender, FormClosedEventArgs e)
         {
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.Show();
+            menuPrincipal.Enabled = true;
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)

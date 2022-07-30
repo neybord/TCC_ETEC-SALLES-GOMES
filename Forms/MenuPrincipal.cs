@@ -22,14 +22,15 @@ namespace Forms
         
         private void mtCLientes_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Enabled = false;
             frmCliente tela = new frmCliente();
+            tela.menuPrincipal = this;
             tela.Show();
         }
 
         private void mtFuncionarios_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Enabled = false;
             frmFuncionario tela = new frmFuncionario();
             tela.Show();
         }
@@ -57,14 +58,14 @@ namespace Forms
 
         private void mtEventos_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Enabled = false;
             frmEventos tela = new frmEventos();
             tela.Show();
         }
 
         private void mtConvidados_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Enabled = false;
             frmConvidado tela = new frmConvidado();
             tela.Show();
         }
@@ -92,7 +93,7 @@ namespace Forms
 
         private void mtChamada_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Enabled = false;
             frmListaConvidados tela = new frmListaConvidados();
             tela.Show();
         }
@@ -153,6 +154,7 @@ namespace Forms
 
         private void mtSobreNos_Click(object sender, EventArgs e)
         {
+            this.Enabled = false;
             Sobre tela = new Sobre();
             tela.ShowDialog();
         }
